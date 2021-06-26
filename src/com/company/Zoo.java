@@ -2,7 +2,7 @@ package com.company;
 
 public class Zoo {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Animal lion = new Animal("Lion", 500, 4, "Does not fly.", "carnivore") {
             @Override
@@ -22,19 +22,25 @@ public class Zoo {
 
             }
         };
+//
+//        Chicken chick1 = new Chicken("Thad",25,2,"Yes it does fly","Herbivore");
+//        Sparrow sparrow1 = new Sparrow("Thad",20,2,"Yes","Carnivore");
+//        //sparrow1.move();
+//
+//        Fish fish1 = new Fish("Fish",30,0,"no","carinvore");
+//        //fish1.move();
+//
+//        moveAnimal(fish1);
+//        moveAnimal(sparrow1);
+//    }
+//
+//    public static void moveAnimal(Animal animal){
+//        animal.move();
+//    }
+//
 
-        Chicken chick1 = new Chicken("Thad",25,2,"Yes it does fly","Herbivore");
-        Sparrow sparrow1 = new Sparrow("Thad",20,2,"Yes","Carnivore");
-        sparrow1.move();
-
-        Fish fish1 = new Fish("Fish",30,0,"no","carinvore");
-        fish1.move();
-
-        moveAnimals(fish1);
-        moveAnimals(sparrow1);
-    }
-
-    public static void moveAnimals(Animal animal){
-        animal.move();
+        Flyable flyingBird = new Sparrow("name",20,2,"Yes","carnivore");
+        flyingBird.fly();
+//        Flyable flyingBird2 = new Bird("name",20,2,"Yes","carnivore");
     }
 }
